@@ -3451,7 +3451,7 @@ const App = () => {
   const HomeView = () => (
     <div style={styles.homeContainer}>
       <header style={styles.homeHeader}>
-        <h1 style={styles.homeTitle}>OSAlgoViz</h1>
+        <h1 style={color}>OSAlgoViz</h1>
         <p style={styles.homeSubtitle}>Master kernel-level logic with professional Gantt charts and real-time execution analytics.</p>
       </header>
       <div style={styles.homeGrid}>
@@ -4479,7 +4479,7 @@ const styles = {
   },
   sidebarHeader: { padding: '32px 20px', display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer' },
   logoBox: { width: '32px', height: '32px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', flexShrink: 0 },
-  logoText: { fontWeight: '800', fontSize: '18px', letterSpacing: '-0.5px', color: 'var(--text-primary)' },
+  logoText: { fontWeight: '800', fontSize: '18px', letterSpacing: '-0.5px', color: '#fa7c15' },
   navList: { flex: 1, padding: '0 12px', display: 'flex', flexDirection: 'column', gap: '8px' },
   navItem: { display: 'flex', alignItems: 'center', gap: '14px', padding: '12px', borderRadius: '12px', cursor: 'pointer', transition: 'all 0.2s ease' },
   navInitials: { width: '34px', height: '34px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: '800', flexShrink: 0 },
