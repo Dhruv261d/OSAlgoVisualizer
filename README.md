@@ -1,16 +1,71 @@
-# React + Vite
+# OSAlgo — Operating System Algorithms Visualizer 🖥️⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-OSAlgo_Visualizer-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://dhruv261d.github.io/OSAlgoVisualizer/)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+An interactive, web-based educational visualizer built with **React 19** and **Vite** to simulate core operating system algorithms including CPU scheduling, page replacement, and memory management with real-time performance metric calculations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Supported Algorithms & Metrics
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ⚙️ 1. CPU Scheduling Algorithms
+Simulate process execution timelines and automatically compute **Waiting Time (WT)**, **Turnaround Time (TAT)**, and **Completion Time (CT)**:
+* **First-Come, First-Served (FCFS)** (Non-preemptive)
+* **Shortest Job First (SJF)** (Preemptive & Non-preemptive)
+* **Round Robin (RR)** (Time-quantum based preemptive scheduling)
+* **Priority Scheduling** (Preemptive & Non-preemptive)
 
-## Expanding the ESLint configuration
+### 📄 2. Page Replacement Algorithms
+Visualize virtual memory management with step-by-step frame state transitions, tracking **Page Hits**, **Page Faults (Misses)**, and **Hit Ratios**:
+* **First-In, First-Out (FIFO)**
+* **Least Recently Used (LRU)**
+* **Optimal Page Replacement (OPT)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Key Features
+
+- **Interactive Execution Control:** Step-by-step execution, dynamic speed adjustment, and live Gantt chart rendering.
+- **Real-Time Analytics:** Instant calculation of average turnaround and waiting times with visual efficiency comparisons.
+- **60 FPS Animation Engine:** Optimized state updates ensuring smooth rendering without UI frame drops.
+- **Custom Process & Reference String Input:** Flexible user-defined burst times, arrival times, priorities, and page reference sequences.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend:** React 19, JavaScript (ES6+), HTML5 Canvas, CSS3
+- **Build Tool:** Vite
+- **Deployment:** GitHub Pages (`gh-pages`)
+
+---
+
+## 📦 Local Setup & Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dhruv261d/OSAlgoVisualizer.git
+   cd OSAlgoVisualizer
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production / deployment:
+   ```bash
+   npm run deploy
+   ```
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
